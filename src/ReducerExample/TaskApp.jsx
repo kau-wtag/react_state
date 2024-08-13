@@ -1,7 +1,7 @@
 import { useReducer } from "react";
 import AddTask from "./AddTask";
 import TaskList from "./TaskList";
-import taskReducer from "./reducers/taskReducer";
+import taskReducer from "./taskReducer";
 
 let nextId = 3;
 const initialTasks = [
