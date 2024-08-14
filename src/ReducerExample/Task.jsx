@@ -32,7 +32,7 @@ export default function Task({ task }) {
       </>
     );
   }
-  
+
   return (
     <label>
       <input

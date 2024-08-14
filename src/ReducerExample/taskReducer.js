@@ -1,4 +1,10 @@
-export default function taskReducer(tasks, action) {
+const initialTasks = [
+  { id: 0, text: "Learn C++", done: false },
+  { id: 1, text: "Go to Gym", done: false },
+  { id: 2, text: "Finish home work", done: false },
+];
+
+const taskReducer = (tasks, action) => {
   switch (action.type) {
     case "added": {
       return [
@@ -26,4 +32,6 @@ export default function taskReducer(tasks, action) {
       throw Error("Unknown action: " + action.type);
     }
   }
-}
+};
+
+export { initialTasks, taskReducer };
