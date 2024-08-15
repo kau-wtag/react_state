@@ -9,6 +9,7 @@ function useFetch(model) {
 
   useEffect(() => {
     if (cache[model]) {
+      console.log("From Cache");
       setData(cache[model]);
       setLoading(false);
       return;
@@ -31,8 +32,7 @@ function useFetch(model) {
         setLoading(false);
       }
     };
-
-    fetchData(false);
+    fetchData();
   }, [model]);
 
   return { data, loading, error };
