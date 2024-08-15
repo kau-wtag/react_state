@@ -6,10 +6,10 @@ import ScrollInto from "./ScrollInto";
 function App() {
   return (
     <>
-      {/* <Counter /> */}
+      <Counter />
       {/* <Stopwatch /> */}
       {/* <FocusComp /> */}
-      <ScrollInto />
+      {/* <ScrollInto /> */}
     </>
   );
 }
